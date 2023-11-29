@@ -1,8 +1,8 @@
 /*
 Theme Name: Parco Maremma Child
 Template: Impreza
-Version: 1.0
-Author:	Pedram Katanchi
+Version: 2.0
+Author:	Pedram Katanchi, Rubens Garofalo
 Theme URI: http://impreza.us-themes.com/
 Author URI: https://webmapp.it
 */
@@ -26,15 +26,52 @@ a, h1, h2, p {
 }
 /* Header */
 /* Main menu */
+.l-subheader.at_middle{
+    height: unset !important;
+}
+.pm-social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-right: -15px;
+}
+.pm-social-icon {
+    margin: 0 2px;
+    background-color: black; 
+    border-radius: 50%;
+    width: 30px;
+    height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    transition: background-color 0.3s ease;
+}
+.pm-social-icon:hover, .pm-social-icon:focus {
+    background-color: var(--color-header-middle-text-hover);
+}
+.pm-social-icon i {
+    font-size: 20px;
+    color: var(--color-header-middle-bg)
+}
+.pm-header-lang{
+    margin-right: 25px;
+    transition: background-color 0.3s ease;
+}
+.pm-header-lang:hover, .pm-header-lang:focus {
+    color: var(--color-header-middle-text-hover);
+}
+.pm-header-main-menu .menu-item {
+    border-left: 1px solid var(--color-header-middle-bg) !important;
+}
+.w-nav-item.level_1.current-menu-item > a:not(.w-btn), .w-nav-item.level_1.current-menu-ancestor > a:not(.w-btn), .ush_menu_1 .w-nav-item.level_1.current-page-ancestor > a:not(.w-btn){
+    border-bottom: 5px solid var(--color-header-middle-text-hover) !important;
+}
 .l-header .l-subheader-cell.at_right > div:not(:last-child) {
     margin-left: 2.5rem;
 }
 .pm-header-social-icons i {
     font-size: 18px;
-}
-.wm_pm_header_main_menu ul.w-nav-list.level_2 {
-    border-top: solid var(--color-primary-dark);
-    padding: 10px 20px;
 }
 .pm-mobile-vertical-menu.grid-hidden { 
     display: none;
@@ -76,8 +113,7 @@ a, h1, h2, p {
     100% {
         -webkit-transform: translateX(0%);
     }
-}
-
+} 
 @-webkit-keyframes slide-in {
     0% {
         transform: translateX(100%);
@@ -86,7 +122,6 @@ a, h1, h2, p {
         transform: translateX(0%);
     }
 }
-
 @keyframes slide-out {
     0% {
         transform: translateX(100%);
@@ -95,7 +130,6 @@ a, h1, h2, p {
         transform: translateX(-100%);
     }
 }
-
 @-webkit-keyframes slide-out {
     0% {
         -webkit-transform: translateX(100%);
@@ -104,11 +138,71 @@ a, h1, h2, p {
         -webkit-transform: translateX(-100%);
     }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1400px) {
+    .pm-header-logo {
+        margin-left: calc(5vw * -1);
+    }
+    .l-subheader .at_right {
+        margin-right: -80px;
+    }
+    .w-search-form{
+        margin-left: -40px;
+        width: 240px;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1360px) {
+    .pm-header-logo {
+        margin-left: calc(3vw * -1);
+    }
+}
+/* @media screen and (min-width: 768px) and (max-width: 1400px) {
+    .at_top{
+        height: 90px !important;
+    }
+} */
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    div.l-subheader.at_middle > div > div.l-subheader-cell.at_center > nav {
+        border-right-style: unset !important;
+    }
+}
+@media screen and (max-width: 900px) {
+    .at_top{
+        height: 90px !important;
+    }
+    .at_middle{
+        padding: 20px 0;
+    }
+    .l-subheader{
+        background-color: var(--color-header-middle-bg) !important;
+        position: relative;
+    }
+    .w-dropdown-list{
+        background-color: var(--color-header-middle-bg) !important;
+    }
+    .header_hor .l-subheader-cell.at_right>* {
+        margin-left: unset !important;
+    }
+    div.l-subheader.at_middle > div > div.l-subheader-cell.at_right > a{
+        transition: background-color 0.3s ease;
+    }
+    div.l-subheader-cell.at_right > a:hover, div.l-subheader-cell.at_right > a:focus {
+        color: var(--color-header-middle-text-hover) !important;
+    }
+    li.menu-item{
+        border-bottom: 2px solid;
+        color: var(--color-header-top-text) !important;
+        transition: background-color 0.3s ease;
+    }
+    li.menu-item:hover, li.menu-item:focus {
+        background-color: var(--color-header-top-text-hover);
+        color: var(--color-header-top-text) !important;
+    }
     .pm-mobile-vertical-menu {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 70px 3fr 1fr 1fr 1fr 1fr;
+        display: block;
+        height: fit-content;
+        top: 125px;
+        padding: 0px;
+        z-index: 10;
     }
     .pm-mobile-vertical-menu-items {
         grid-column: span 2;
@@ -125,6 +219,42 @@ a, h1, h2, p {
     }
     .pm-mobile-vertical-menu .w-text.ush_text_2{
         align-self: flex-end;
+    }
+    div.w-text.ush_text_2.nowrap{
+        padding-top: 10px;
+    }
+    div.w-text.ush_text_1.nowrap{
+        padding-bottom: 30px;
+    }
+    div.w-text.ush_text_2.nowrap, div.w-text.ush_text_1.nowrap {
+
+        padding-left: 20px;
+    }
+   .pm-mobile-vertical-menu > a{
+        color: var(--color-header-top-text) !important;
+        padding-left: 20px;
+        transition: background-color 0.3s ease;
+   }
+    .pm-mobile-vertical-menu > a:hover, .pm-mobile-vertical-menu > a:focus {
+        color: var(--color-header-middle-text-hover) !important;
+    }
+    .w-nav-title{
+        margin-left: 5%;
+        transition: background-color 0.3s ease;
+    }
+    .w-nav-title:hover, .w-nav-title:focus {
+        color: var(--color-header-top-text);
+    }
+    .w-nav-arrow{
+        margin-right: 5%;
+    }
+    div.pm-header-search-bar{
+        padding: 20px;
+    }
+    .w-nav-item.level_1.current-menu-item > a:not(.w-btn), .w-nav-item.level_1.current-menu-ancestor > a:not(.w-btn), .ush_menu_1 .w-nav-item.level_1.current-page-ancestor > a:not(.w-btn){
+        border-bottom: none !important;
+        background-color: var(--color-header-top-text-hover) !important;
+        color: var(--color-header-top-text) !important;
     }
 }
 /* banner slider carousel section homepage */
