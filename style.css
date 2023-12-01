@@ -505,6 +505,9 @@ time.tribe-events-pro-week-grid__header-column-datetime span,time.tribe-events-p
     }
 }
 /* footer */
+.pm-logo-footer{
+    padding: unset !important;
+}
 @media screen and (min-width: 768px) {
     .pm-footer-social-icons .wpb_wrapper {
         display: flex;
@@ -621,42 +624,15 @@ time.tribe-events-pro-week-grid__header-column-datetime span,time.tribe-events-p
     }
 }
 /* breadcrumb wordpress seo style */
-.pm-breadcrumb-container a,.pm-breadcrumb-yoast a {
-    color: var(--color-primary);
+.pm-breadcrumb-yoast > div > span > span > a{
+    transition: transform 0.3s;
 }
-.pm-breadcrumb-container a:hover {
-    color: var(--color-primary-dark);
+.pm-breadcrumb-yoast > div > span > span > a:focus, .pm-breadcrumb-yoast > div > span > span > a:hover {
+    color: var(--color-header-middle-text-hover);
 }
-.pm-breadcrumb-container .breadcrumb-separator {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.pm-breadcrumb-yoast > .wpb_wrapper a{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.pm-breadcrumb-yoast > .wpb_wrapper > span > span > a {
-    padding-left: 0px!important;
-}
-.pm-breadcrumb-yoast > .wpb_wrapper .breadcrumb_last{
-    padding-left: 15px;
-}
-@media screen and (max-width: 767px) { 
-    .pm-breadcrumb-container .post_title {
-        width: 100%;
-        float: left;
-    }
-    .pagination .page-numbers {
-        height: 2.5rem!important;
-        width: 2rem!important;
-    }
-    .pagination .nav-links {
-        justify-content: center!important;
-    }
-    
-}
-.pagination .page-numbers {
-    font-size: 14px!important;
+/* style pagine il parco */
+.pm-what-to-know-content{
+margin-bottom: unset !important;
 }
 /* style pagine statiche */
 .pm-static-parent-page ul.child-sidebar-menu {
