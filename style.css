@@ -155,11 +155,6 @@ a, h1, h2, p {
         margin-left: calc(3vw * -1);
     }
 }
-/* @media screen and (min-width: 768px) and (max-width: 1400px) {
-    .at_top{
-        height: 90px !important;
-    }
-} */
 @media screen and (min-width: 768px) and (max-width: 900px) {
     div.l-subheader.at_middle > div > div.l-subheader-cell.at_center > nav {
         border-right-style: unset !important;
@@ -508,11 +503,27 @@ time.tribe-events-pro-week-grid__header-column-datetime span,time.tribe-events-p
 .pm-logo-footer{
     padding: unset !important;
 }
+.pm-wa-subscription{
+    margin-bottom: -15px;
+}
+.pm-wa-subscription > a > div{
+    padding-top: 6px;
+}
+.pm-wa-subscription > div, .pm-tg-subscription > div.w-iconbox-meta{
+    margin-left: -8px;
+}
+.pm-footer-form-newsletter .us-btn-style_1 {
+    min-width: 120px;
+}
+.pm-footer-form-newsletter input[type="email"] {
+    border: 1px solid #A7A6B6;
+    box-sizing: border-box;
+    border-radius: 43px;
+}
+.pm-footer-form-newsletter {
+    padding-bottom: 20px;
+}
 @media screen and (min-width: 768px) {
-    .pm-footer-social-icons .wpb_wrapper {
-        display: flex;
-        justify-content: flex-end;
-    }
     body .pm-mainmenu-footer-container ul {
         display: grid !important;
         grid-template-columns: 1fr 2fr;
@@ -528,16 +539,16 @@ time.tribe-events-pro-week-grid__header-column-datetime span,time.tribe-events-p
         text-align: right;
     }
 }
-.pm-footer-form-newsletter .us-btn-style_1 {
-    min-width: 120px;
-}
-.pm-footer-form-newsletter input[type="email"] {
-    border: 1px solid #A7A6B6;
-    box-sizing: border-box;
-    border-radius: 43px;
-}
-.pm-footer-form-newsletter {
-    padding-bottom: 20px;
+@media screen and (max-width: 767px) {
+    .pm-footer-credits > div > div > div > div > p {
+        text-align: unset !important;
+    }
+    .pm-social-icons{
+        justify-content: flex-start;
+    }
+    .pm-footer-social-icons{
+        order: -1 !important;
+    }
 }
 /* gallery masonry section */
 @media screen and (min-width: 768px) {
@@ -633,6 +644,20 @@ time.tribe-events-pro-week-grid__header-column-datetime span,time.tribe-events-p
 /* style pagine il parco */
 .pm-what-to-know-content{
 margin-bottom: unset !important;
+}
+.pm-title-accordion-content{
+    border-bottom: 1px solid var(--color-header-top-text);
+}
+.pm-title-accordion-content > button{
+    font-weight: 600;
+    border-bottom: 1px solid var(--color-header-top-text);
+}
+.pm-text-link-content{
+    text-decoration: underline !important;
+    transition: transform 0.3s;
+}
+div.owl-carousel > div.owl-stage-outer > div > div > article > div > h2 > a{
+    display: none;
 }
 /* style pagine statiche */
 .pm-static-parent-page ul.child-sidebar-menu {
@@ -750,9 +775,6 @@ h3.pm-event-details-title {
     }
     .pm-event-content-grid {
         display: grid!important;
-    }
-    .pm-event-content-col {
-
     }
     .pm-event-detail-col {
         grid-row: 1;
@@ -1055,10 +1077,11 @@ p.wm_gutenberg_default_btn a {
     margin: 0 ;
 }
 .ccchildpage-wm .list img {
+    color: var(--color-content-link) !important;
     padding-top: 17px;
 }
 a.ccpage_title_link {
-    color: #51A661!important;
+    color: var(--color-content-link) !important;
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.3px;
@@ -1107,13 +1130,45 @@ a.ccpage_title_link {
 .mc4wp-form-fields {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
-}
-.mc4wp-form-fields input[type="email"] {
-    border-radius: 34px;
 }
 .mc4wp-form-fields label {
     grid-column: span 2;
+}
+div.mc4wp-form-fields > input[type=email] {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: var(--color-header-middle-text);
+}
+.pm-form-submit-button{
+    border-top-left-radius: 0 !important; 
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 30px !important;
+    border-bottom-right-radius: 30px !important;
+    background-color: var(--color-header-middle-bg) !important;
+    display: flex;
+    align-items: center;
+    text-align: end !important;
+    justify-content: center;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+.pm-form-submit-icon{
+    color: var(--color-header-middle-text);
+    height: 20px;
+    width: auto;
+} 
+div.mc4wp-form-fields > label{
+    padding-top: 15px;
+}
+div.mc4wp-form-fields > button > img{
+    margin-top: 5px;
+}
+div.mc4wp-form-fields > input[type=email], div.mc4wp-form-fields > label > input[type=checkbox]{
+    background-color: var(--color-header-middle-bg);
+    border-color: transparent !important;
 }
 .page li.blocks-gallery-item img {
     height: 250px!important;
