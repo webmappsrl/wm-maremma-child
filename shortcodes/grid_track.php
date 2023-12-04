@@ -37,7 +37,6 @@ function wm_grid_track_maremma($atts)
 
             $activity_mapped = geohub_taxonomy_mapping($activity);
             $activities_url = "https://geohub.webmapp.it/api/app/elbrus/1/taxonomies/track_activity_$activity_mapped.json";
-            // $posts = json_decode(file_get_contents($activities_url), TRUE);
             $posts = json_decode(file_get_contents($activities_url), TRUE);
 
 
@@ -63,24 +62,24 @@ function wm_grid_track_maremma($atts)
                                                     if (array_key_exists('name', $post) && is_array($post['name']) && array_key_exists($language, $post['name'])) {
                                                         $name = $post['name'][$language];
                                                     } else {
-                                                        $name = ''; // valore di default se non definito
+                                                        $name = '';
                                                     }
 
                                                     if (array_key_exists('excerpt', $post) && is_array($post['excerpt']) && array_key_exists($language, $post['excerpt'])) {
                                                         $excerpt = $post['excerpt'][$language];
                                                     } else {
-                                                        $excerpt = ''; // valore di default se non definito
+                                                        $excerpt = '';
                                                     }
 
                                                     if (array_key_exists('difficulty', $post) && is_array($post['difficulty']) && array_key_exists($language, $post['difficulty'])) {
                                                         $difficulty = $post['difficulty'][$language];
                                                     } else {
-                                                        $difficulty = ''; // valore di default se non definito
+                                                        $difficulty = '';
                                                     }
                                                     if (array_key_exists('distance', $post)) {
                                                         $distance = $post['distance'];
                                                     } else {
-                                                        $distance = ''; // o un'altra logica di default che preferisci per la distanza non definita
+                                                        $distance = '';
                                                     }
                                                 }
 
@@ -90,18 +89,23 @@ function wm_grid_track_maremma($atts)
                     <a href="<?= $post_url ?>" class="wm-grid-track-link">
                         <div class="wm-grid-track-intro" style="background-image:url(<?= $image_url ?>);">
                             <div class="wm-grid-track-overlay"></div>
-                            <div class="wm-grid-track-title"><?= $name ?></div>
-                            <div class="wm-grid-track-excerpt"><?= $excerpt ?></div>
                         </div>
                         <div class="wm-grid-track-info">
-                            <div class="wm-grid-track-difficulty"><?php if ($hideClass) {
-                                                                        echo __('Discover more', 'wm-child-maremma');
-                                                                    } else {
-                                                                        echo __('Difficulty', 'wm-child-maremma') . ': <span>' . $difficulty . '</span>';
-                                                                    } ?></div>
-                            <div class="wm-grid-track-distance <?= $hideClass ?>"><?= __('Distance', 'wm-child-maremma') . ' ' . $distance . 'km' ?></div>
-                            <div class="wm-grid-track-link-icon"><i class="far fa-arrow-right"></i></div>
+                            <div class="wm-grid-track-title"><?= $name ?></div>
+                            <div class="wm-grid-track-info-detail">
+                                <div class="wm-grid-track-difficulty"><?php if ($hideClass) {
+                                                                            echo __('Discover more', 'wm-child-maremma');
+                                                                        } else {
+                                                                            echo __('Difficulty', 'wm-child-maremma') . ' <span>' . $difficulty . '</span> | ';
+                                                                        } ?></div>
+                                <div class="wm-grid-track-distance <?= $hideClass ?>">
+                                    <?= __('KM', 'wm-child-maremma') . ' ' . $distance ?>
+                                </div>
+
+                                <div class="wm-grid-track-link-icon"><i class="far fa-arrow-right"></i></div>
+                            </div>
                         </div>
+                        <div class="wm-grid-track-excerpt"><?= $excerpt ?></div>
                     </a>
                 </div>
 
