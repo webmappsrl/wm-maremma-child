@@ -8,21 +8,21 @@
      "description": "<p>Adults: € 10.00 - Reduced: € 5.00 (children from 6 years to 14 years, groups min. 20 people*, students up to 25 years of age)</p>"
    },
   "ec_track_55005_it": {
- "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
-     "description": "<p>Intero: € 10,00 - Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</p>"
-   },
- "ec_track_55005_en": {
- "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
-     "description": "<p>Adults: € 10.00 - Reduced: € 5.00 (children from 6 years to 14 years, groups min. 20 people*, students up to 25 years of age)</p>"
-   },
-   "ec_track_13_it": {
- "purchase": "",
-     "description": "<p>Intero: € 10,00 - Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</p><p>Il biglietto del percorso è acquistabile anche online in autunno ed inverno, mentre in primavera ed estate solo al centro visite di Alberese (via del bersagliere 7/9)</p>"
-   },
- "ec_track_13_en": {
- "purchase": "",
-     "description": "<p>Adults: € 10.00 - Reduced: € 5.00 (children from 6 years to 14 years, groups min. 20 people*, students up to 25 years of age)</p><p>The itinerary ticket can also be purchased online in autumn and winter, while in spring and summer only at the Alberese visitor center (via del bersagliere 7/9)</p>"
-   },
+    "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li></ul>"
+  },
+  "ec_track_55005_en": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li></ul>"
+  },
+  "ec_track_13_it": {
+    "purchase": "",
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li></ul><p>Il biglietto del percorso è acquistabile anche online in autunno ed inverno, mentre in primavera ed estate solo al centro visite di Alberese (via del bersagliere 7/9)</p>"
+  },
+  "ec_track_13_en": {
+    "purchase": "",
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li></ul><p>The itinerary ticket can also be purchased online in autumn and winter, while in spring and summer only at the Alberese visitor center (via del bersagliere 7/9)</p>"
+  },
    "ec_track_3_it": {
       "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
      "description": "<p>Intero: € 10,00 - Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</p><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
@@ -95,14 +95,14 @@
      "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
      "description": "<p>​​Adults: € 5,00 - Reduced: € 2.00 (children from 6 years to 14 years, groups min. 20 people*, students up to 25 years of age)</p><p>Free for residents in Grosseto, Magliano in Toscana and in Orbetello, and for children until 6 years old</p><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
    },
-  "ec_track_12_it": {
-     "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
-     "description": "<p>Intero: € 5,00 - Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</p><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
-   },
- "ec_track_12_en": {
-   "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
-     "description": "<p>Adults: € 5.00 - Reduced: € 2.00 (children from 6 years to 14 years, groups min. 20 people*, students up to 25 years of age)</p><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
-   },
+   "ec_track_12_it": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
+    "description": "<p>Costo itinerario</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (dai 6 ai 14 anni)</li><li>Gruppi con 20 persone minimo (studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l’escursione) sia al centro visite di Alberese.</p>"
+  },  
+  "ec_track_12_en": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+  },
   "ec_track_19_it": {
      "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
      "description": "<p>Intero: € 5,00 - Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</p><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"

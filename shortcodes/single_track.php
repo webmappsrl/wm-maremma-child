@@ -22,10 +22,14 @@ function wm_single_track_maremma($atts)
     $track = json_decode(file_get_contents($json_url), TRUE);
     // $mapping_tickets = json_decode(file_get_contents(get_stylesheet_directory_uri() . '/assets/track_ticket_mapping.json'), TRUE);
     $mapping_tickets = json_decode(file_get_contents('http://parco-maremma.local/wp-content/themes/wm-maremma-child/assets/track_ticket_mapping.json'), TRUE);
+    $excerpt = $track['excerpt'][$language];
     $description = $track['description'][$language];
     $title = $track['name'][$language];
     $featured_image = $track['image']['sizes']['1440x500'];
-    $gallery = $track['imageGallery'];
+    $gallery = array_key_exists('imageGallery', $track) ? $track['imageGallery'] : null;
+    // echo '<pre>';
+    // print_r($track);
+    // echo '</pre>';
     $gpx = $track['gpx'];
 
     $mapping = array();
@@ -62,8 +66,11 @@ function wm_single_track_maremma($atts)
     <div class="wm_track_body_section">
         <div class="wm_track_body_map_wrapper">
             <div class="wm_track_body_map_title">
-                <h2><?= __('Map', 'wm-child-maremma'); ?></h2>
-                <p><?= __('Explore routes and points of interest', 'wm-child-maremma'); ?></p>
+                <?php if ($excerpt) { ?>
+                    <div class="wm_track_body_excerpt">
+                        <h2><?php echo $excerpt; ?></h2>
+                    </div>
+                <?php } ?>
             </div>
             <div class="wm_track_body_map">
                 <?php
@@ -71,78 +78,88 @@ function wm_single_track_maremma($atts)
                 ?>
             </div>
         </div>
+        <?php if ($description) { ?>
+            <div class="wm_track_body_description">
+                <?php echo $description; ?>
+            </div>
+        <?php } ?>
+        <div class="wm_track_body_gallery">
+            <?php if (is_array($gallery) && !empty($gallery)) : ?>
+                <div class="w-grid type_carousel layout_7769 cols_2" id="us_grid_1">
+                    <div class="w-grid-list owl-carousel navstyle_3 navpos_outside owl-loaded owl-drag">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <?php foreach ($gallery as $image) : ?>
+                                    <div class="owl-item">
+                                        <article class="w-grid-item post-7348 attachment type-attachment status-inherit hentry" data-id="7348">
+                                            <div class="w-grid-item-h">
+                                                <a class="w-grid-item-anchor" href="<?= esc_url($image['url']) ?>" rel="magnificPopupGrid" title=""></a>
+                                                <div class="w-post-elm post_image usg_post_image_1 has_ratio">
+                                                    <div style="padding-bottom:75.0000%"></div>
+                                                    <a href="<?= esc_url($image['url']) ?>" rel="magnificPopup" aria-label="">
+                                                        <img src="<?= esc_url($image['sizes']['400x200']) ?>" class="attachment-full size-full" alt="" loading="lazy">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
+        </div>
         <div class="wm_track_body_sidebar_wrapper">
             <div class="wm_track_body_map_details">
-                <p class="track_sidebar_label"><?= __('Tecnical info', 'wm-child-maremma') ?></p>
+                <div class="wm_track_detail">
+                    <p class="track_sidebar_label"><?= __('Tecnical info', 'wm-child-maremma') ?></p>
+                </div>
                 <?php
                 echo do_shortcode('[wm-embedmaps-technical-info feature_id="' . $track_id . '-' . $track_id . '" config="ele_from,ele_to,ele_max,ele_min,distance,duration_forward,ascent,descent,difficulty,scale"]');
                 ?>
-            </div>
-            <div class="wm_track_body_map_elevation">
-                <p class="track_sidebar_label"><?= __('Elevation chart', 'wm-child-maremma') ?></p>
-                <?php
-                echo do_shortcode('[wm-embedmaps-elevation-chart feature_id="' . $track_id . '-' . $track_id . '"]');
-                ?>
-            </div>
-            <div class="wm_track_body_download">
-                <a class="w-btn us-btn-style_5 icon_atleft" href="<?= $gpx ?>"><i class="fal fa-arrow-to-bottom"></i><span class="w-btn-label"><?= __('Download GPX', 'wm-child-maremma') ?></span></a>
+                <div class="wm_track_body_map_elevation">
+                    <p class="track_sidebar_label"><?= __('Elevation chart', 'wm-child-maremma') ?></p>
+                    <div class="wm-elevation-chart">
+                        <?php
+                        echo do_shortcode('[wm-embedmaps-elevation-chart feature_id="' . $track_id . '-' . $track_id . '"]');
+                        ?>
+                    </div>
+                </div>
+                <div class="wm_track_body_download">
+                    <a class="icon_atleft" href="<?= $gpx ?>"><?= __('Download GPX', 'wm-child-maremma') ?></span></a>
+                </div>
             </div>
         </div>
         <div class="wm_track_body_content_wrapper">
             <?php
             if (!empty($mapping)) {
             ?><div class="wm_track_body_ticket">
-                    <p class="ticket_text"><strong> <?= $mapping['description'] ?></strong></p><?php
-                                                                                                if (array_key_exists('calendar', $mapping)) {
-                                                                                                ?><div class="single_track_ticket_btn">
+                    <p class="ticket_text"><?= $mapping['description'] ?></p><?php
+                                                                                if (array_key_exists('calendar', $mapping)) {
+                                                                                ?><div class="single_track_ticket_btn">
                             <a class="w-btn us-btn-style_1" href="<?= $mapping['calendar'] ?>"><span class="w-btn-label"><?= __('Go to calendar', 'wm-child-maremma') ?></span></a>
-                        </div><?php
-                                                                                                }
-                                                                                                if (array_key_exists('purchase', $mapping)) {
-                                ?><div class="single_track_ticket_btn">
-                            <a class="w-btn us-btn-style_1" href="<?= $mapping['purchase'] ?>"><span class="w-btn-label"><?= __('Purchase online', 'wm-child-maremma') ?></span></a>
-                        </div><?php
-                                                                                                }
-                                                                                                if (array_key_exists('subscription', $mapping)) {
-                                ?>
+                        </div>
                         <a class="single_track_ticket_link" href="<?= $mapping['subscription'] ?>"><span class="w-btn-label"><?= __('Subscription and promotions', 'wm-child-maremma') ?></span></a>
                     <?php
-                                                                                                }
+                                                                                }
                     ?>
                 </div><?php
                     }
+                    if (array_key_exists('purchase', $mapping)) {
                         ?>
-            <?php if ($description) { ?>
-                <div class="wm_track_body_description">
-                    <p class="track_description_label"><?= __('The path', 'wm-child-maremma') ?></p>
-                    <?php echo $description; ?>
+                <div class="single_track_ticket_btn">
+                    <a class="w-btn us-btn-style_6" href="<?= esc_url($mapping['purchase']); ?>">
+                        <span class="w-btn-label"><?= esc_html__('Purchase', 'wm-child-maremma'); ?></span>
+                        <img src="https://parco-maremma.local/wp-content/uploads/2023/11/Tracciato-95.png" alt="Arrow Icon" class="pm-arrow-icon">
+                    </a>
                 </div>
-            <?php } ?>
-            <div class="wm_track_body_gallery">
-
-                <div class="w-grid type_carousel layout_7769 cols_2" id="us_grid_1">
-                    <div class="w-grid-list owl-carousel navstyle_3 navpos_outside owl-loaded owl-drag">
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage">
-                                <?php
-                                $count = 6;
-                                foreach ($gallery as $image) { ?>
-                                    <div class="owl-item">
-                                        <article class="w-grid-item post-7348 attachment type-attachment status-inherit hentry" data-id="7348">
-                                            <div class="w-grid-item-h">
-                                                <a class="w-grid-item-anchor" href="<?= $image['url'] ?>" ref="magnificPopupGrid" title=""></a>
-                                                <div class="w-post-elm post_image usg_post_image_1 has_ratio">
-                                                    <div style="padding-bottom:75.0000%"></div><a href="<?= $image['url'] ?>" ref="magnificPopup" aria-label=""><img src="<?= $image['sizes']['400x200'] ?>" class="attachment-full size-full" alt="" loading="lazy"></a>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                <?php }; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <?php
+                    }
+                    if (array_key_exists('subscription', $mapping)) {
+                ?><?php
+                    }
+                    ?>
         </div>
 
     </div>

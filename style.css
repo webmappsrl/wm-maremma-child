@@ -642,6 +642,10 @@ time.tribe-events-pro-week-grid__header-column-datetime span,time.tribe-events-p
     color: var(--color-header-middle-text-hover);
 }
 /* style pagine il parco */
+/* .owl-stage-outer{
+    margin-top: -40px;
+    margin-bottom: -100px;
+} */
 .pm-what-to-know-content{
 margin-bottom: unset !important;
 }
@@ -701,6 +705,9 @@ div.owl-carousel > div.owl-stage-outer > div > div > article > div > h2 > a{
     .pm-page-sidebar-menu {
         display: none;
     }
+    /* .owl-stage-outer{
+        margin-bottom: -135px !important;
+    } */
 }
 /* single event style */
 .pm-event-category {
@@ -895,13 +902,22 @@ p.wm_gutenberg_default_btn a {
 }
 /* Single track style */
 .wm_track_breadcrumb_section {
-    padding-bottom: 1rem!important;
+    /* padding-bottom: 1rem!important; */
+    background-color: var(--color-header-middle-bg) ;
+    margin-top: -26px;
+}
+section.l-section.wpb_row.height_small.wm_track_breadcrumb_section > div{
+    /* padding-top: 75px !important; */
 }
 .wm_track_body_map_title {
     padding-bottom: 20px;
 }
 .wm_track_body_map_title h2 {
-    color:var(--color-blue);
+    color: var(--color-header-top-text);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
 }
 .wm_track_header_title {
     padding: 0 ;
@@ -913,43 +929,134 @@ p.wm_gutenberg_default_btn a {
     margin-top: 30px;
 }
 .track_description_label {
+    color: var(--color-header-top-text);
     font-size: 21px;
-    color: #006E90;
     font-weight: 600;
 }
 .wm_track_body_download {
-    padding-top: 10px;
-    text-align: center;
+    /* padding-top: 10px; */
+    padding: 10px 10px;
+    text-align: start;
+    text-decoration: underline;
+}
+.wm_track_body_map_details, .wm_track_body_map_elevation {
+    background-color: white;
+}
+.wm_embedmaps-technical_info-table-element{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--color-header-middle-text);
+}
+.wm_embedmaps-technical_info-table-element-label{
+    order: -1;
+}
+.track_sidebar_label{
+    color: var(--color-header-top-text);
+    padding: 5px 15px 0px 15px;
+}
+.wm-elevation-chart{
+    background-color: #f9f7f2;
+    margin: 15px;
+}
+.wm_track_header_section .l-section-img.loaded {
+    background-size: cover;
+    background-position: center center;
+}
+.wm_track_header_wrapper h1,.wm_track_header_wrapper h3 {
+    color: white;
+}
+.wm_track_body_description{
+    color: var(--color-content-text);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.wm_track_body_ticket{
+    color: white;
+    background-color: var(--color-alt-content-bg-alt);
+    border-radius: 9px;
+    border: 1px solid #707070;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.wm_track_body_ticket > p {
+    margin: 0px !important;
+}
+.wm_track_body_ticket > ul {
+    list-style-type: square !important;
+    margin-left: 1rem !important;
+}
+.wm_track_body_ticket > p:nth-child(2){
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.single_track_ticket_btn {
+    display: inline-block;
+}
+.single_track_ticket_btn a {
+    min-width: 250px;
+}
+.single_track_ticket_link {
+    text-decoration: underline;
+    font-weight: bold;
+    line-height: 40px;
+    vertical-align: text-top;
 }
 
+.single_track_ticket_btn {
+    display: flex;
+    align-items: center;
+}
 
+.single_track_ticket_btn .w-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-right: 40px;
+}
+
+.single_track_ticket_btn .pm-arrow-icon {
+    position: absolute;
+    right: 10px;
+    height: auto;
+    width: 10px; 
+}
 @media (min-width: 768px) { 
     .wm_track_body_section {
         display: grid;
-        padding: 30px 40px;
+        padding: 30px 95px;
         grid-template-columns: 70% 28%;
         grid-template-areas:
-            "a b"
-            "c b";
+            "map sidebar"
+            "description sidebar"
+            "gallery sidebar"
+            "ticket sidebar";
         grid-gap: 20px;
     }
     .wm_track_body_map_wrapper {
-        grid-area: a;
+        grid-area: map;
+    }
+    .wm_track_body_description {
+        grid-area: description;
+    }
+    .wm_track_body_gallery{
+        grid-area: gallery;
+    }
+    .wm_track_body_content_wrapper{
+        grid-area: ticket;
     }
     .wm_track_body_sidebar_wrapper {
-        grid-area: b;
-    }
-    .wm_track_body_content_wrapper {
-        grid-area: c;
+        grid-area: sidebar;
     }
     .wm_track_header_wrapper {
         min-height: 360px;
         display: grid;
         align-content: end;
         margin: 0;
-    }
-    .wm_track_header_wrapper h1,.wm_track_header_wrapper h3 {
-        color: white;
     }
     .wm_track_body_gallery .w-grid-list:not(.autoheight) .owl-stage {
         display: grid;
@@ -960,38 +1067,43 @@ p.wm_gutenberg_default_btn a {
         margin-left: 50px;
     }
     .wm_track_body_map_details, .wm_track_body_map_elevation {
-        background-color: var(--color-secondary-menu-light);
         margin-bottom: 20px;
     }
     .track_sidebar_label {
         font-size: 21px;
         font-weight: 600;
-        background-color: var(--color-secondary-menu);
-        padding: 5px 15px;
+        /* background-color: var(--color-secondary-menu); */
     }
-    
 }
 @media (max-width: 767px) {
+    .wm_track_breadcrumb_section{
+        display: none;
+    }
     .wm_track_header_section {
         padding-top: 10px!important;
         padding-bottom: 10px!important;
     }
-    .wm_track_header_section .l-section-img.loaded {
-        background: none;
-        background-image: none!important;
+    .wm_track_header_wrapper{
+        top: 250px;
     }
-    .wm_track_header_section .l-section-overlay {
+    .wm_track_header_taxonomy{
+        font-size: 20px !important;
+    }
+    .wm_track_header_title{
+        font-size: 30px !important;
+    }
+    .wm_track_header_section {
+        padding-bottom: 19.5rem !important;
+    }
+    /* .wm_track_header_section .l-section-overlay {
         display: none;
-    }
+    } */
     .wm_track_header_section h1 {
         font-size: 24px;
     } 
     .wm_track_header_section h3 {
         font-size: 16px;
     } 
-    .wm_track_body_map_title {
-        display: none;
-    }
     .wm_track_body_section {
         display: grid;
         padding: 20px;
@@ -1012,38 +1124,17 @@ p.wm_gutenberg_default_btn a {
     }
     .single_track_ticket_btn {
         width: 100%;
-        text-align: center;
+        text-align: start;
     }
-    .pm-breadcrumb-yoast > .wpb_wrapper a {
-        padding-left: 5px;
-        padding-right: 5px;
+    .l-sidebar, .l-section.height_small, .l-section.height_medium {
     }
-    .pm-breadcrumb-yoast a {
-        font-size: 14px;
-    }
-    .wm_track_body_map_details, .wm_track_body_map_elevation {
+    /* .wm_track_body_map_details, .wm_track_body_map_elevation {
         margin-bottom: 20px;
-    }
+    } */
     .track_sidebar_label {
         font-size: 21px;
-        color: #006E90;
         font-weight: 600;
     }
-}
-.wm_track_body_ticket {
-    margin-bottom: 30px;
-}
-.single_track_ticket_btn {
-    display: inline-block;
-}
-.single_track_ticket_btn a {
-    min-width: 250px;
-}
-.single_track_ticket_link {
-    text-decoration: underline;
-    font-weight: bold;
-    line-height: 40px;
-    vertical-align: text-top;
 }
 /* child pages style */
 .ccchildpage-wm {
