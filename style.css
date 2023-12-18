@@ -15,7 +15,7 @@ p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-:root {
+/* :root {
   --color-primary: #51a661;
   --color-primary-light: #57bc92;
   --color-primary-dark: #04514b;
@@ -26,7 +26,7 @@ p {
   --color-white: #f8f9fb;
   --color-blue: #006e90;
   --color-blue-light: #76cad4;
-}
+} */
 /* Header */
 /* Main menu */
 .l-subheader.at_middle {
@@ -69,7 +69,8 @@ p {
 .pm-header-main-menu .menu-item {
   border-left: 1px solid var(--color-header-middle-bg) !important;
 }
-#menu-item-22313 {
+#menu-item-22313,
+#menu-item-23605 {
   border-right: 1px solid var(--color-header-middle-bg) !important;
 }
 .w-nav-item.level_1.current-menu-item > a:not(.w-btn),
@@ -105,7 +106,7 @@ p {
   background-color: white;
   display: grid;
   position: fixed;
-  width: 100%;
+  width: 100% !important;
   top: 0;
   bottom: 0;
   left: 0;
@@ -115,6 +116,17 @@ p {
   padding: 5px 1rem;
   animation: slide-in 0.5s forwards;
   -webkit-animation: slide-in 0.5s forwards;
+}
+.pm-mobile-vertical-menu > nav > ul > li.menu-item.opened > ul {
+  width: 100%;
+}
+.pm-mobile-vertical-menu > nav > ul > li.menu-item > a {
+  display: flex;
+  flex-direction: row;
+}
+.pm-mobile-vertical-menu > nav > ul > li.menu-item > a > span.w-nav-title {
+  flex: 1 1 auto;
+  align-self: auto;
 }
 @keyframes slide-in {
   0% {
@@ -194,7 +206,7 @@ p {
   div.l-subheader-cell.at_right > a:focus {
     color: var(--color-header-middle-text-hover) !important;
   }
-  li.menu-item {
+  ul > li.menu-item {
     border-bottom: 2px solid;
     color: var(--color-header-top-text) !important;
   }
@@ -204,7 +216,7 @@ p {
   .pm-mobile-vertical-menu {
     display: block;
     height: fit-content;
-    top: 100px;
+    top: 80px;
     padding: 0px;
     z-index: 10;
   }
@@ -264,6 +276,10 @@ p {
     background-color: var(--color-header-top-text-hover) !important;
     color: var(--color-header-top-text) !important;
   }
+}
+/*homepage */
+.owl-item {
+  padding: 0px 30px;
 }
 /* button style homepage */
 .pm-home-button-container {
@@ -359,6 +375,11 @@ p {
 /* banner youtube player section homepage */
 .pm-home-youtube-player {
   margin-top: -30px;
+}
+@media screen and (max-width: 900px) {
+  .pm-home-youtube-player {
+    margin-top: 30px;
+  }
 }
 /* banner calendar section homepage */
 .single-tribe_events .tribe-events-c-subscribe-dropdown__container,
@@ -675,6 +696,10 @@ time.tribe-events-calendar-day__event-datetime,
 .pm-footer-form-newsletter {
   padding-bottom: 20px;
 }
+nav.pm-footer-menu > ul > li {
+  border-bottom: unset !important;
+  color: black !important;
+}
 @media screen and (min-width: 768px) {
   body .pm-mainmenu-footer-container ul {
     display: grid !important;
@@ -741,6 +766,13 @@ time.tribe-events-calendar-day__event-datetime,
   }
 }
 @media screen and (max-width: 767px) {
+  .et_social_icon {
+    margin-right: 3px !important;
+  }
+  .pm-news-header {
+    padding-top: 40px !important;
+    padding-bottom: 20px !important;
+  }
   .single-post .w-separator.size_custom {
     height: 6rem !important;
   }
@@ -762,6 +794,11 @@ time.tribe-events-calendar-day__event-datetime,
     text-align: center;
     margin: 0 !important;
   }
+  .pm-news-content > div > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
   .pm-single-article-social-container {
     position: fixed;
     bottom: 0;
@@ -769,6 +806,9 @@ time.tribe-events-calendar-day__event-datetime,
     background-color: white;
     border-top: 1px solid #d4d4d4;
     z-index: 100;
+    width: 50% !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
   }
   .pm-single-article-social-container > .vc_column-inner > .wpb_wrapper {
     display: flex !important;
@@ -800,6 +840,11 @@ time.tribe-events-calendar-day__event-datetime,
 }
 section.l-section.wpb_row.us_custom_b021466a.has_text_color.hide_on_tablets.hide_on_mobiles.height_small {
   z-index: 1;
+}
+@media screen and (max-width: 1380px) {
+  section.l-section.wpb_row.us_custom_b021466a.has_text_color.hide_on_tablets.hide_on_mobiles.height_small {
+    padding-top: 0px !important;
+  }
 }
 /* style pagine il parco */
 .pm-what-to-know-content {
@@ -879,6 +924,9 @@ h6 {
   padding: 0px 20px;
   line-height: 35px;
 }
+nav.pm-page-sidebar-menu > ul.menu-main-menu-4 > li.menu-item {
+  border-bottom: none !important;
+}
 @media screen and (max-width: 767px) {
   .pm-page-sidebar-menu {
     display: none;
@@ -892,6 +940,7 @@ h6 {
 }
 .tribe-events-event-meta {
   width: 100% !important;
+  background-color: white !important;
 }
 .tribe-related-event-info {
   padding-left: 10px !important;
@@ -904,6 +953,57 @@ h6 {
   font-weight: bold;
   font-size: 32px;
   text-transform: capitalize;
+}
+.tribe-events-meta-group {
+  padding: 10px !important;
+}
+.tribe-events-single-section-title {
+  font-size: 18px;
+}
+div.tribe-events-meta-group > dl > dt,
+.tribe-events-start-date-label,
+.tribe-events-start-time-label,
+.tribe-events-event-cost-label,
+.tribe-events-event-categories-label {
+  font-weight: 700;
+}
+.tribe-events-single .tribe-events-sub-nav .tribe-events-nav-next a,
+.tribe-events-single .tribe-events-sub-nav .tribe-events-nav-previous a,
+.tribe-events-c-nav__prev-label,
+.tribe-events-c-nav__next-label {
+  color: var(--color-header-top-text) !important;
+  text-transform: capitalize;
+}
+.tribe-events-single:hover
+  .tribe-events-sub-nav:hover
+  .tribe-events-nav-next
+  a:hover,
+.tribe-events-single:hover
+  .tribe-events-sub-nav:hover
+  .tribe-events-nav-previous
+  a:hover,
+.tribe-events-c-nav__prev-label:hover,
+.tribe-events-c-nav__next-label:hover,
+.tribe-events-single:focus
+  .tribe-events-sub-nav:focus
+  .tribe-events-nav-next
+  a:focus,
+.tribe-events-single:focus
+  .tribe-events-sub-nav:focus
+  .tribe-events-nav-previous
+  a:focus,
+.tribe-events-c-nav__prev-label:focus,
+.tribe-events-c-nav__next-label:focus {
+  color: var(--color-header-middle-text-hover) !important;
+}
+.tribe-common-c-btn-border-small {
+  color: var(--color-header-top-text) !important;
+  font-weight: 700 !important;
+}
+.tribe-common-c-btn-border-small:hover,
+.tribe-common-c-btn-border-small:focus {
+  color: white !important;
+  background-color: var(--color-header-top-text) !important;
 }
 @media screen and (min-width: 768px) {
   .tribe-events-back {
@@ -999,12 +1099,11 @@ h6 {
 /* gutenberg custom button */
 p.wm_gutenberg_default_btn a:hover {
   box-shadow: 0 0em 0em rgb(0 0 0 / 20%);
-  background: #04514b;
+  background: var(--color-header-middle-text-hover);
   border-color: transparent;
   color: #ffffff !important;
 }
 p.wm_gutenberg_default_btn a {
-  font-family: 'Barlow', sans-serif;
   font-size: 16px;
   line-height: 1.2 !important;
   font-weight: 700;
@@ -1013,14 +1112,13 @@ p.wm_gutenberg_default_btn a {
   letter-spacing: 0em;
   border-radius: 39px;
   padding: 0.8em 1.8em;
-  background: #51a661;
+  background: var(--color-header-top-text);
   border-color: transparent;
   color: #ffffff !important;
   box-shadow: 0 0em 0em rgb(0 0 0 / 20%);
 }
 /* Single track style */
 .wm_track_breadcrumb_section {
-  /* padding-bottom: 1rem!important; */
   background-color: var(--color-header-middle-bg);
   margin-top: -26px;
 }
@@ -1049,7 +1147,6 @@ p.wm_gutenberg_default_btn a {
   font-weight: 600;
 }
 .wm_track_body_download {
-  /* padding-top: 10px; */
   padding: 10px 10px;
   text-align: start;
   text-decoration: underline;
@@ -1241,10 +1338,6 @@ p.wm_gutenberg_default_btn a {
     width: 100%;
     text-align: start;
   }
-  .l-sidebar,
-  .l-section.height_small,
-  .l-section.height_medium {
-  }
   .track_sidebar_label {
     font-size: 21px;
     font-weight: 600;
@@ -1255,15 +1348,11 @@ p.wm_gutenberg_default_btn a {
   display: grid;
   grid-template-columns: 16px 1fr;
 }
-.ccchildpage-wm h3 {
-  margin: 0;
-}
 .ccchildpage-wm .list img {
-  color: var(--color-content-link) !important;
+  color: var(--color-header-top-text-hover) !important;
   padding-top: 17px;
 }
 a.ccpage_title_link {
-  color: var(--color-content-link) !important;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.3px;
@@ -1369,4 +1458,17 @@ div.mc4wp-form-fields > label > input[type='checkbox'] {
   background-color: white;
   margin: 0;
   padding: 5px 20px;
+}
+div.menu-amministrazione-trasparente > div > ul > li {
+  border-bottom: unset !important;
+}
+@media screen and (max-width: 1024px) {
+  .pm-header-template-amministrazione-trasparente {
+    padding-top: 120px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pm-header-template-amministrazione-trasparente {
+    padding-top: 20px !important;
+  }
 }
