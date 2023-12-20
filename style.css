@@ -376,6 +376,16 @@ p {
 .pm-home-youtube-player {
   margin-top: -30px;
 }
+@media screen and (max-width: 1380px) {
+  .pm-home-youtube-player {
+    margin-top: -78px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 901px) {
+  .pm-home-youtube-player {
+    margin-top: -30px;
+  }
+}
 @media screen and (max-width: 900px) {
   .pm-home-youtube-player {
     margin-top: 30px;
@@ -1025,6 +1035,13 @@ div.tribe-events-meta-group > dl > dt,
 }
 .wm-grid-track-item a.wm-grid-track-link {
   color: var(--color-header-middle-bg);
+}
+div.wm-grid-track-excerpt > a.wm-grid-track-link {
+  color: var(--color-header-top-text);
+}
+div.wm-grid-track-excerpt > a.wm-grid-track-link:hover,
+div.wm-grid-track-excerpt > a.wm-grid-track-link:focus {
+  color: var(--color-header-middle-text-hover);
 }
 .wm-grid-track-item a.wm-grid-track-link:hover {
   color: var(--color-header-middle-bg);
