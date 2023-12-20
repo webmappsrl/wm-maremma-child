@@ -15,18 +15,6 @@ p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* :root {
-  --color-primary: #51a661;
-  --color-primary-light: #57bc92;
-  --color-primary-dark: #04514b;
-  --color-secondary: #f3efe4;
-  --color-secondary-light: #f3efe485;
-  --color-secondary-menu: #f3efe4;
-  --color-secondary-menu-light: #f9f7f2;
-  --color-white: #f8f9fb;
-  --color-blue: #006e90;
-  --color-blue-light: #76cad4;
-} */
 /* Header */
 /* Main menu */
 .l-subheader.at_middle {
@@ -1445,7 +1433,7 @@ div.mc4wp-form-fields > input[type='email'] {
 .pm-form-submit-icon {
   color: var(--color-header-middle-text);
   height: 20px;
-  width: auto;
+  max-width: 10px !important;
 }
 div.mc4wp-form-fields > label {
   padding-top: 15px;
