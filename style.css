@@ -57,8 +57,8 @@ p {
 .pm-header-main-menu .menu-item {
   border-left: 1px solid var(--color-header-middle-bg) !important;
 }
-#menu-item-22313,
-#menu-item-23605 {
+#menu-item-23983,
+#menu-item-23985 {
   border-right: 1px solid var(--color-header-middle-bg) !important;
 }
 .w-nav-item.level_1.current-menu-item > a:not(.w-btn),
@@ -440,6 +440,9 @@ p {
 /* carousel what to know homepage */
 .pm-home-post-image-carousel-what-to-know {
   height: 300px;
+}
+.owl-carousel.navpos_inside > .owl-nav button {
+  text-shadow: none;
 }
 /* banner slider carousel section homepage */
 .pm-home-banner-slider-row-container {
@@ -1216,7 +1219,7 @@ p.wm_gutenberg_default_btn a {
   display: inline-block;
 }
 .single_track_ticket_btn a {
-  min-width: 250px;
+  width: 100%;
 }
 .single_track_ticket_link {
   text-decoration: underline;
@@ -1361,6 +1364,9 @@ a.ccpage_title_link {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.3px;
+}
+div.ccchildpages {
+  margin-top: 10px;
 }
 @media (min-width: 768px) {
   div#ccchildpages-1 {
