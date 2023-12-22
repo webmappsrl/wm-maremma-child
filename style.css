@@ -1078,6 +1078,7 @@ div.wm-grid-track-excerpt > a.wm-grid-track-link:focus {
   white-space: normal;
   text-overflow: clip;
   overflow: visible;
+  padding: 5px;
 }
 .wm-grid-track-info {
   background-color: var(--color-alt-content-secondary);
@@ -1485,5 +1486,11 @@ div.menu-amministrazione-trasparente > div > ul > li {
 @media screen and (max-width: 767px) {
   .pm-header-template-amministrazione-trasparente {
     padding-top: 20px !important;
+  }
+}
+/* itinerari */
+@media screen and (max-width: 767px) {
+  .pm-carousel-itineraries {
+    margin-bottom: 40px;
   }
 }
