@@ -151,7 +151,7 @@ function wm_single_track_maremma($atts)
                 <div class="single_track_ticket_btn">
                     <a class="w-btn us-btn-style_6" href="<?= esc_url($mapping['purchase']); ?>">
                         <span class="w-btn-label"><?= esc_html__('Purchase', 'wm-child-maremma'); ?></span>
-                        <img src="https://parco-maremma.local/wp-content/uploads/2023/11/Tracciato-95.png" alt="Arrow Icon" class="pm-arrow-icon">
+                        <img src="/wp-content/uploads/2023/11/Tracciato-95.png" alt="Arrow Icon" class="pm-arrow-icon">
                     </a>
                 </div>
                 <?php
