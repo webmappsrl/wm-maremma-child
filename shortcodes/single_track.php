@@ -20,20 +20,16 @@ function wm_single_track_maremma($atts)
     $geojson_url = "https://geohub.webmapp.it/api/app/elbrus/1/geojson/$track_id.geojson";
     $json_url = "https://geohub.webmapp.it/api/app/elbrus/1/geojson/$track_id.json";
     $track = json_decode(file_get_contents($json_url), TRUE);
-    // $mapping_tickets = json_decode(file_get_contents(get_stylesheet_directory_uri() . '/assets/track_ticket_mapping.json'), TRUE);
-    $mapping_tickets = json_decode(file_get_contents('http://parco-maremma.local/wp-content/themes/wm-maremma-child/assets/track_ticket_mapping.json'), TRUE);
+    $mapping_tickets = json_decode(file_get_contents(get_stylesheet_directory_uri() . '/assets/track_ticket_mapping.json'), TRUE);
     if (array_key_exists('excerpt', $track) && array_key_exists($language, $track['excerpt'])) {
         $excerpt = $track['excerpt'][$language];
     } else {
-        $excerpt = null; // O un valore di default che preferisci
+        $excerpt = null;
     }
     $description = $track['description'][$language];
     $title = $track['name'][$language];
     $featured_image = $track['image']['sizes']['1440x500'];
     $gallery = array_key_exists('imageGallery', $track) ? $track['imageGallery'] : null;
-    // echo '<pre>';
-    // print_r($track);
-    // echo '</pre>';
     $gpx = $track['gpx'];
 
     $mapping = array();
