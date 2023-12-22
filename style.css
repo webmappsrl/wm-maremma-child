@@ -1018,6 +1018,10 @@ div.tribe-events-meta-group > dl > dt,
   .tribe-events-meta-group-gmap {
     order: 2;
   }
+  .tribe-events-related-events-title,
+  .tribe-events-meta-group.tribe-events-meta-group-gmap {
+    border-top: unset !important;
+  }
 }
 /* style menu pagine listing */
 .wm-grid-track-item-container {
