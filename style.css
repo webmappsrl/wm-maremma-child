@@ -15,6 +15,9 @@ p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+img {
+  pointer-events: none !important;
+}
 /* Header */
 /* Main menu */
 .l-subheader.at_middle {
