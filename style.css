@@ -440,6 +440,20 @@ img {
   }
 }
 
+/* carousel what to do homepage */
+div.w-grid-list.owl-carousel.navstyle_7.navpos_inside.owl-loaded.owl-drag
+  > div.owl-stage-outer
+  > div
+  > div
+  > article
+  > div
+  > div.w-post-elm.post_image
+  > div {
+  padding-bottom: 65% !important;
+}
+.owl-item {
+  padding: 0px 5px;
+}
 /* carousel what to know homepage */
 .pm-home-post-image-carousel-what-to-know {
   height: 300px;
@@ -1491,9 +1505,13 @@ div.menu-amministrazione-trasparente > div > ul > li {
     padding-top: 20px !important;
   }
 }
-/* itinerari */
+/* itineraries */
 @media screen and (max-width: 767px) {
   .pm-carousel-itineraries {
     margin-bottom: 40px;
   }
+}
+/* council */
+.pm-council-image {
+  margin-bottom: 10px;
 }
