@@ -92,12 +92,14 @@ function yoast_seo_breadcrumb_append_link($links)
 // disables right clicking //
 function disable_right_click()
 {
+  if (!is_user_logged_in()) {
 ?>
-  <script type="text/javascript">
-    document.addEventListener('contextmenu', function(e) {
-      e.preventDefault();
-    }, false);
-  </script>
+    <script type="text/javascript">
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+      }, false);
+    </script>
 <?php
+  }
 }
 add_action('wp_footer', 'disable_right_click');
