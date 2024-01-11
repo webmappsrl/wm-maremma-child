@@ -21,6 +21,7 @@ function wm_single_track_maremma($atts)
     $json_url = "https://geohub.webmapp.it/api/app/elbrus/1/geojson/$track_id.json";
     $track = json_decode(file_get_contents($json_url), TRUE);
     $mapping_tickets = json_decode(file_get_contents(get_stylesheet_directory_uri() . '/assets/track_ticket_mapping.json'), TRUE);
+    // $mapping_tickets = json_decode(file_get_contents('http://parco-maremma.local/wp-content/themes/wm-maremma-child/assets/track_ticket_mapping.json'), TRUE);
     if (array_key_exists('excerpt', $track) && array_key_exists($language, $track['excerpt'])) {
         $excerpt = $track['excerpt'][$language];
     } else {
@@ -149,7 +150,7 @@ function wm_single_track_maremma($atts)
                     if (array_key_exists('purchase', $mapping)) {
                         ?>
                 <div class="single_track_ticket_btn">
-                    <a class="w-btn us-btn-style_6" href="<?= esc_url($mapping['purchase']); ?>">
+                    <a class="w-btn us-btn-style_6 purchase-button" href="<?= esc_url($mapping['purchase']); ?>">
                         <span class="w-btn-label"><?= esc_html__('Purchase', 'wm-child-maremma'); ?></span>
                         <img src="/wp-content/uploads/2023/11/Tracciato-95.png" alt="Arrow Icon" class="pm-arrow-icon">
                     </a>
@@ -163,6 +164,27 @@ function wm_single_track_maremma($atts)
         </div>
 
     </div>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const purchaseButtons = document.querySelectorAll('.purchase-button');
+
+            purchaseButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const purchaseLink = this.getAttribute('href');
+
+                    if (!sessionStorage.getItem('ticketSessionInitialized')) {
+                        sessionStorage.setItem('ticketSessionInitialized', 'true');
+                        window.location.href = purchaseLink;
+                    } else {
+                        window.location.href = purchaseLink;
+                    }
+                });
+            });
+        });
+    </script>
+
 <?php
 
     return ob_get_clean();
