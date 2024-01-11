@@ -516,29 +516,11 @@ div.w-grid-list.owl-carousel.navstyle_7.navpos_inside.owl-loaded.owl-drag
 .pm-home-banner-slider-container .w-grid-list .owl-stage-outer {
   grid-column: 1 / 6;
 }
-.pm-home-banner-slider-container .w-grid-list .owl-nav div {
-  position: inherit !important;
-  display: inline-block !important;
-}
-.pm-home-banner-slider-container .w-grid-list .owl-prev:after {
-  font-weight: 100;
-  padding: 5px 13px;
-  color: white;
-  background-color: var(--color-primary-light);
-  border-radius: 51px;
-  font-size: 24px;
-  margin-right: 20px;
-}
-.pm-home-banner-slider-container .w-grid-list .owl-prev:hover:after {
-  background-color: var(--color-primary);
-}
-.pm-home-banner-slider-container .w-grid-list .owl-next:after {
-  font-weight: 100;
-  padding: 5px 13px;
-  color: white;
-  background-color: var(--color-primary-light);
-  border-radius: 51px;
-  font-size: 24px;
+div.w-grid-list.owl-carousel > div.owl-nav > button.owl-next,
+div.w-grid-list.owl-carousel > div.owl-nav > button.owl-prev {
+  background-color: black;
+  border-color: black;
+  color: white !important;
 }
 .pm-home-banner-slider-container .owl-carousel.navstyle_circle .owl-nav div {
   height: 0px !important;
@@ -548,9 +530,6 @@ div.w-grid-list.owl-carousel.navstyle_7.navpos_inside.owl-loaded.owl-drag
   .owl-nav
   div {
   margin-top: 0 !important;
-}
-.pm-home-banner-slider-container .w-grid-list .owl-next:hover:after {
-  background-color: var(--color-primary);
 }
 .pm-home-banner-slider-container .owl-carousel .owl-dot span {
   display: none !important;
@@ -717,7 +696,9 @@ time.tribe-events-calendar-day__event-datetime,
 nav.pm-footer-menu > ul > li {
   border-bottom: unset !important;
   color: black !important;
+  margin-bottom: 10px !important;
 }
+
 @media screen and (min-width: 768px) {
   body .pm-mainmenu-footer-container ul {
     display: grid !important;
@@ -824,7 +805,7 @@ nav.pm-footer-menu > ul > li {
     background-color: white;
     border-top: 1px solid #d4d4d4;
     z-index: 100;
-    width: 50% !important;
+    width: 60% !important;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 25px;
   }
@@ -970,7 +951,6 @@ nav.pm-page-sidebar-menu > ul.menu-main-menu-4 > li.menu-item {
 .tribe-events-single-event-title {
   font-weight: bold;
   font-size: 32px;
-  text-transform: capitalize;
 }
 .tribe-events-meta-group {
   padding: 10px !important;
