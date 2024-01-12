@@ -62,6 +62,13 @@ function wm_grid_track_maremma($atts)
                                                     $name =  $post->post_title;
                                                     $excerpt =  wp_filter_nohtml_kses(wp_trim_excerpt(preg_replace('#\[[^\]]+\]#', '', $post->post_content), $post->ID));
                                                     $hideClass = 'hidesection';
+                                                    //TODO: trovare un modo migliore per discrimnare alcune activity
+                                                    if (
+                                                        strpos($post_url, "/a-cavallo/") || strpos($post_url, "/in-carrozza/") || strpos($post_url, "/in-canoa/") ||
+                                                        strpos($post_url, "/tours-on-horseback/") || strpos($post_url, "/tours-on-chariot/") || strpos($post_url, "/tours-with-canadian-canoes/")
+                                                    ) {
+                                                        $excerpt = '';
+                                                    }
                                                 } else {
                                                     $post_url = esc_url(get_permalink(get_page_by_title($post['name'][$language])));
                                                     $image_url = $post['image']['sizes']['400x200'];
