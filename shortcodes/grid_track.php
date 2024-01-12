@@ -31,6 +31,9 @@ function wm_grid_track_maremma($atts)
                 $ids_array = explode(',', $ids);
             }
             $posts = get_posts(array('post_type' => 'page', 'post__in' => $ids_array, 'numberposts' => -1));
+            usort($posts, function ($a, $b) {
+                return strnatcasecmp($a->post_title, $b->post_title);
+            });
             $quantity = count($posts);
         } else {
             $activity = strtolower($activity);
@@ -38,8 +41,11 @@ function wm_grid_track_maremma($atts)
             $activity_mapped = geohub_taxonomy_mapping($activity);
             $activities_url = "https://geohub.webmapp.it/api/app/elbrus/1/taxonomies/track_activity_$activity_mapped.json";
             $posts = json_decode(file_get_contents($activities_url), TRUE);
-
-
+            if (is_array($posts)) {
+                usort($posts, function ($a, $b) use ($language) {
+                    return strnatcasecmp($a['name'][$language], $b['name'][$language]);
+                });
+            }
             if ($quantity == -1 || $quantity > count($posts)) {
                 $quantity = count($posts);
             }
