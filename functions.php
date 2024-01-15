@@ -99,7 +99,19 @@ function disable_right_click()
         e.preventDefault();
       }, false);
     </script>
-<?php
+  <?php
   }
 }
 add_action('wp_footer', 'disable_right_click');
+
+function remove_target_blank_from_child_pages()
+{
+  ?>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('a.ccpage_title_link').removeAttr('target');
+    });
+  </script>
+<?php
+}
+add_action('wp_footer', 'remove_target_blank_from_child_pages');
