@@ -1486,6 +1486,13 @@ div.menu-amministrazione-trasparente > div > ul > li {
   }
 }
 /* itineraries */
+.wm_embedmaps-ele_max,
+.wm_embedmaps-ele_min,
+.wm_embedmaps-ele_from,
+.wm_embedmaps-ele_to,
+.wm_embedmaps-descent {
+  display: none !important;
+}
 @media screen and (max-width: 767px) {
   .pm-carousel-itineraries {
     margin-bottom: 40px;
