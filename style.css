@@ -1496,6 +1496,11 @@ div.menu-amministrazione-trasparente > div > ul > li {
 .wm_embedmaps-descent {
   display: none !important;
 }
+.wm_track_body_excerpt {
+  h2 {
+    font-weight: unset !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .pm-carousel-itineraries {
     margin-bottom: 40px;
