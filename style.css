@@ -1153,6 +1153,7 @@ p.wm_gutenberg_default_btn a {
 }
 .wm_track_body_gallery {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .track_description_label {
   color: var(--color-header-top-text);
@@ -1251,6 +1252,40 @@ p.wm_gutenberg_default_btn a {
   right: 10px;
   height: auto;
   width: 10px;
+}
+.wm_embedmaps-ele_max,
+.wm_embedmaps-ele_min,
+.wm_embedmaps-ele_from,
+.wm_embedmaps-ele_to,
+.wm_embedmaps-descent {
+  display: none !important;
+}
+.wm_track_body_excerpt {
+  h2 {
+    font-weight: unset !important;
+  }
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-slider .slick-prev,
+.slick-slider .slick-next {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-slider .slick-slide {
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-slider .slick-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .wm_track_body_section {
@@ -1354,6 +1389,18 @@ p.wm_gutenberg_default_btn a {
   .track_sidebar_label {
     font-size: 21px;
     font-weight: 600;
+  }
+  .pm-carousel-itineraries {
+    margin-bottom: 40px;
+  }
+  .slick-slider .slick-next {
+    padding-right: 30px;
+  }
+  .slick-slider .slick-prev {
+    padding-left: 10px;
+  }
+  .pm-header-image {
+    background-position: right !important;
   }
 }
 /* child pages style */
@@ -1486,24 +1533,6 @@ div.menu-amministrazione-trasparente > div > ul > li {
 @media screen and (max-width: 767px) {
   .pm-header-template-amministrazione-trasparente {
     padding-top: 20px !important;
-  }
-}
-/* itineraries */
-.wm_embedmaps-ele_max,
-.wm_embedmaps-ele_min,
-.wm_embedmaps-ele_from,
-.wm_embedmaps-ele_to,
-.wm_embedmaps-descent {
-  display: none !important;
-}
-.wm_track_body_excerpt {
-  h2 {
-    font-weight: unset !important;
-  }
-}
-@media screen and (max-width: 767px) {
-  .pm-carousel-itineraries {
-    margin-bottom: 40px;
   }
 }
 /* council */

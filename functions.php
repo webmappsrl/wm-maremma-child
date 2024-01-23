@@ -115,3 +115,11 @@ function remove_target_blank_from_child_pages()
 <?php
 }
 add_action('wp_footer', 'remove_target_blank_from_child_pages');
+
+function add_slick_slider()
+{
+  wp_enqueue_style('slick-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+  wp_enqueue_style('slick-theme-css', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css');
+  wp_enqueue_script('slick-js', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'add_slick_slider');

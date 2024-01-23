@@ -20,6 +20,9 @@ function wm_single_track_maremma($atts)
     $geojson_url = "https://geohub.webmapp.it/api/app/elbrus/1/geojson/$track_id.geojson";
     $json_url = "https://geohub.webmapp.it/api/app/elbrus/1/geojson/$track_id.json";
     $track = json_decode(file_get_contents($json_url), TRUE);
+    // echo '<pre>';
+    // print_r($track);
+    // echo '</pre>';
     $mapping_tickets = json_decode(file_get_contents(get_stylesheet_directory_uri() . '/assets/track_ticket_mapping.json'), TRUE);
     // $mapping_tickets = json_decode(file_get_contents('http://parco-maremma.local/wp-content/themes/wm-maremma-child/assets/track_ticket_mapping.json'), TRUE);
     if (array_key_exists('excerpt', $track) && array_key_exists($language, $track['excerpt'])) {
@@ -54,7 +57,7 @@ function wm_single_track_maremma($atts)
     </section>
     <section class="l-section wpb_row height_small with_img with_overlay wm_track_header_section">
 
-        <div class="l-section-img loaded" style="background-image: url(<?= $featured_image ?>);background-repeat: no-repeat;">
+        <div class="l-section-img loaded pm-header-image" style="background-image: url(<?= $featured_image ?>);background-repeat: no-repeat;">
         </div>
         <div class="l-section-overlay" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%)"></div>
         <div class="l-section-h i-cf wm_track_header_wrapper">
@@ -86,28 +89,12 @@ function wm_single_track_maremma($atts)
         <?php } ?>
         <div class="wm_track_body_gallery">
             <?php if (is_array($gallery) && !empty($gallery)) : ?>
-                <div class="w-grid type_carousel layout_7769 cols_2" id="us_grid_1">
-                    <div class="w-grid-list owl-carousel navstyle_3 navpos_outside owl-loaded owl-drag">
-                        <div class="owl-stage-outer">
-                            <div class="owl-stage">
-                                <?php foreach ($gallery as $image) : ?>
-                                    <div class="owl-item">
-                                        <article class="w-grid-item post-7348 attachment type-attachment status-inherit hentry" data-id="7348">
-                                            <div class="w-grid-item-h">
-                                                <a class="w-grid-item-anchor" href="<?= esc_url($image['url']) ?>" rel="magnificPopupGrid" title=""></a>
-                                                <div class="w-post-elm post_image usg_post_image_1 has_ratio">
-                                                    <div style="padding-bottom:75.0000%"></div>
-                                                    <a href="<?= esc_url($image['url']) ?>" rel="magnificPopup" aria-label="">
-                                                        <img src="<?= esc_url($image['sizes']['400x200']) ?>" class="attachment-full size-full" alt="" loading="lazy">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
+                <div class="slick-slider">
+                    <?php foreach ($gallery as $image) : ?>
+                        <div>
+                            <img src="<?= esc_url($image['sizes']['400x200']) ?>" alt="" loading="lazy">
                         </div>
-                    </div>
+                    <?php endforeach; ?>
                 </div>
             <?php endif; ?>
         </div>
@@ -166,21 +153,15 @@ function wm_single_track_maremma($atts)
     </div>
 
     <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-            const purchaseButtons = document.querySelectorAll('.purchase-button');
-
-            purchaseButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const purchaseLink = this.getAttribute('href');
-
-                    if (!sessionStorage.getItem('ticketSessionInitialized')) {
-                        sessionStorage.setItem('ticketSessionInitialized', 'true');
-                        window.location.href = purchaseLink;
-                    } else {
-                        window.location.href = purchaseLink;
-                    }
-                });
+        jQuery(document).ready(function($) {
+            $('.slick-slider').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: false,
+                variableWidth: false,
+                centerMode: false,
             });
         });
     </script>
