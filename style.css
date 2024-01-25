@@ -1260,10 +1260,8 @@ p.wm_gutenberg_default_btn a {
 .wm_embedmaps-descent {
   display: none !important;
 }
-.wm_track_body_excerpt {
-  h2 {
-    font-weight: unset !important;
-  }
+.wm_track_body_excerpt h2 {
+  font-weight: unset !important;
 }
 .slick-prev:before,
 .slick-next:before {
@@ -1399,7 +1397,9 @@ p.wm_gutenberg_default_btn a {
   .slick-slider .slick-prev {
     padding-left: 10px;
   }
-  .pm-header-image {
+  body.page-id-24339 .pm-header-image,
+  body.page-id-7986 .pm-header-image,
+  body.page-id-8007 .pm-header-image {
     background-position: right !important;
   }
 }
