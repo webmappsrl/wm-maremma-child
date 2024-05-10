@@ -432,9 +432,7 @@ img {
 .pm-home-logo-mountain-container {
   margin-top: -30px;
 }
-.pm-calendar-event-button {
-  display: none;
-}
+
 @media (max-width: 767px) {
   .pm-home-calendar-icon-container {
     margin-left: 0;
@@ -1425,7 +1423,6 @@ div.ccchildpages {
 @media (min-width: 768px) {
   div#ccchildpages-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
 }
