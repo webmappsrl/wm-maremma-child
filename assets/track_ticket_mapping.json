@@ -149,11 +149,11 @@
   },
   "ec_track_80697_it": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=48&nomeservizio=",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00 (non include il noleggio della bicicletta)</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>Gratuito per i bambini fino a 6 anni e per i residenti nei Comuni della Comunità del Parco</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00 (non include il noleggio della bicicletta)</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>Gratuito per i bambini fino a 6 anni</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
   },
   "ec_track_80697_en": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=48&nomeservizio=",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5,00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Free for residents in Grosseto, Magliano in Toscana, and in Orbetello, and for children until 6 years old</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5,00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Free for children until 6 years old</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
   },
   "ec_track_80699_it": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=49&nomeservizio= Percorso%20°%20piedi%20faunistico%20forestale%20A5%20%20-%20A6%20",
