@@ -172,39 +172,51 @@
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
   },
   "ec_track_14_it": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=59&nomeservizio= Percorso%20°%20piedi%20A7%20Foce%20Ombrone%20%20",
     "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il biglietto del percorso è acquistabile anche online in autunno ed inverno, mentre in primavera ed estate solo al centro visite di Alberese (via del bersagliere 7/9)</p>"
   },
   "ec_track_14_en": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=59&nomeservizio= Percorso%20°%20piedi%20A7%20Foce%20Ombrone%20%20",
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The itinerary ticket can also be purchased online in autumn and winter, while in spring and summer only at the Alberese visitor center (via del bersagliere 7/9)</p>"
   },
   "ec_track_80695_it": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=110&nomeservizio=A9%20I%20Valloni%20",
     "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il biglietto del percorso è acquistabile anche online in autunno ed inverno, mentre in primavera ed estate solo al centro visite di Alberese (via del bersagliere 7/9)</p>"
   },
   "ec_track_80695_en": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=110&nomeservizio=A9%20I%20Valloni%20",
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The itinerary ticket can also be purchased online in autumn and winter, while in spring and summer only at the Alberese visitor center (via del bersagliere 7/9)</p>"
   },
   "ec_track_5_it": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=98&nomeservizio= Percorso%20°%20%20piedi%20A4%20Cala%20%20di%20forno%20",
     "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul>"
   },
   "ec_track_5_en": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=98&nomeservizio= Percorso%20°%20%20piedi%20A4%20Cala%20%20di%20forno%20",
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul>"
   },
   "ec_track_4_it": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=57&nomeservizio= Percorso%20%20piedi%20A3%20Oliveto%20di%20Collelungo%20",
     "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il biglietto del percorso è acquistabile anche online in autunno ed inverno, mentre in primavera ed estate solo al centro visite di Alberese (via del bersagliere 7/9)</p>"
   },
   "ec_track_4_en": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=57&nomeservizio= Percorso%20%20piedi%20A3%20Oliveto%20di%20Collelungo%20",
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The itinerary ticket can also be purchased online in autumn and winter, while in spring and summer only at the Alberese visitor center (via del bersagliere 7/9)</p>"
   },
   "ec_track_15_it": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=58&nomeservizio= Percorso%20°%20piedi%20A2%20%20Le%20Torri%20",
     "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il biglietto del percorso è acquistabile anche online in autunno ed inverno, mentre in primavera ed estate solo al centro visite di Alberese (via del bersagliere 7/9)</p>"
   },
   "ec_track_15_en": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=58&nomeservizio= Percorso%20°%20piedi%20A2%20%20Le%20Torri%20",
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The itinerary ticket can also be purchased online in autumn and winter, while in spring and summer only at the Alberese visitor center (via del bersagliere 7/9)</p>"
   },
   "ec_track_13_it": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=56&nomeservizio= Percorso%20a%20piedi%20A1%20Abbazia%20di%20San%20Rabano%20e%20Torre%20Uccellina",
     "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il biglietto del percorso è acquistabile anche online in autunno ed inverno, mentre in primavera ed estate solo al centro visite di Alberese (via del bersagliere 7/9)</p>"
   },
   "ec_track_13_en": {
+    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=56&nomeservizio= Percorso%20a%20piedi%20A1%20Abbazia%20di%20San%20Rabano%20e%20Torre%20Uccellina",
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The itinerary ticket can also be purchased online in autumn and winter, while in spring and summer only at the Alberese visitor center (via del bersagliere 7/9)</p>"
   }
 }
