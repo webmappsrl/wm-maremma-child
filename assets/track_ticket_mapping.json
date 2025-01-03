@@ -80,19 +80,15 @@
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
   },
   "ec_track_7_it": {
-    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=52&nomeservizio= Percorso%20°%20piedi%20T1%20Punta%20del%20Corvo,%20T2%20Cannelle,%20T3%20Poggio%20Raso%20",
     "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>L’itinerario è fruibile solo con guida e sarà effettuato con un minimo di 10 persone. Per prenotare rivolgersi al Centro Visite di Alberese ai numeri 0564 393238 / 0564 407098 dalle 9:00 alle 13:00 oppure scrivere a booking@parco-maremma.it</p>"
   },
   "ec_track_7_en": {
-    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=52&nomeservizio= Percorso%20°%20piedi%20T1%20Punta%20del%20Corvo,%20T2%20Cannelle,%20T3%20Poggio%20Raso%20",
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The itinerary is only accessible with a guide and will be carried out with a minimum of 10 people. To book, please contact the Alberese Visitor Centre on 0564 393238 / 0564 407098 from 9:00 to 13:00 or write to booking@parco-maremma.it</p>"
   },
   "ec_track_6_it": {
-    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=52&nomeservizio= Percorso%20°%20piedi%20T1%20Punta%20del%20Corvo,%20T2%20Cannelle,%20T3%20Poggio%20Raso%20",
     "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>L’itinerario è fruibile solo con guida e sarà effettuato con un minimo di 10 persone. Per prenotare rivolgersi al Centro Visite di Alberese ai numeri 0564 393238 / 0564 407098 dalle 9:00 alle 13:00 oppure scrivere a booking@parco-maremma.it</p>"
   },
   "ec_track_6_en": {
-    "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=52&nomeservizio= Percorso%20°%20piedi%20T1%20Punta%20del%20Corvo,%20T2%20Cannelle,%20T3%20Poggio%20Raso%20",
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The itinerary is only accessible with a guide. To book, please contact the Alberese Visitor Centre on 0564 393238 / 0564 407098 from 8:30 to 13:30 or write to booking@parco-maremma.it</p>"
   },
   "ec_track_23_it": {
