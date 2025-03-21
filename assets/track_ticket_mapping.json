@@ -182,10 +182,8 @@
     "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The itinerary ticket can also be purchased online in autumn and winter, while in spring and summer only at the Alberese visitor center (via del bersagliere 7/9)</p>"
   },
   "ec_track_5_it": {
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul>"
   },
   "ec_track_5_en": {
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul>"
   },
   "ec_track_4_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/a3-oliveto-di-collelungo/",
