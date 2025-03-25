@@ -14,7 +14,9 @@ function wm_single_track_maremma($atts)
 
     extract(shortcode_atts(array(
         'track_id' => '',
-        'activity' => ''
+        'activity' => '',
+        'enable_purchase' => false,
+        'enable_description' => false,
     ), $atts));
 
     $geojson_url = "https://geohub.webmapp.it/api/app/elbrus/1/geojson/$track_id.geojson";
@@ -35,6 +37,8 @@ function wm_single_track_maremma($atts)
     $featured_image = $track['image']['sizes']['1440x500'];
     $gallery = array_key_exists('imageGallery', $track) ? $track['imageGallery'] : null;
     $gpx = $track['gpx'];
+    $enable_purchase = filter_var($enable_purchase, FILTER_VALIDATE_BOOLEAN);
+    $enable_description = filter_var($enable_description, FILTER_VALIDATE_BOOLEAN);
 
     $mapping = array();
     // mapping the tickets section
@@ -120,35 +124,22 @@ function wm_single_track_maremma($atts)
             </div>
         </div>
         <div class="wm_track_body_content_wrapper">
-            <?php
-            if (!empty($mapping)) {
-            ?><div class="wm_track_body_ticket">
-                    <p class="ticket_text"><?= $mapping['description'] ?></p><?php
-                                                                                if (array_key_exists('calendar', $mapping)) {
-                                                                                ?><div class="single_track_ticket_btn">
-                            <a class="w-btn us-btn-style_1" href="<?= $mapping['calendar'] ?>"><span class="w-btn-label"><?= __('Go to calendar', 'wm-child-maremma') ?></span></a>
-                        </div>
-                        <a class="single_track_ticket_link" href="<?= $mapping['subscription'] ?>"><span class="w-btn-label"><?= __('Subscription and promotions', 'wm-child-maremma') ?></span></a>
-                    <?php
-                                                                                }
-                    ?>
-                </div><?php
-                    }
-                    if (array_key_exists('purchase', $mapping)) {
-                        ?>
+            <?php if ($enable_description && array_key_exists('description', $mapping)) : ?>
+                <div class="wm_track_body_ticket">
+                    <p class="ticket_text"><?= $mapping['description'] ?></p>
+                </div>
+            <?php endif; ?>
+
+            <?php if ($enable_purchase && array_key_exists('purchase', $mapping)) : ?>
                 <div class="single_track_ticket_btn">
                     <a class="w-btn us-btn-style_6 purchase-button" href="<?= esc_url($mapping['purchase']); ?>">
                         <span class="w-btn-label"><?= esc_html__('Purchase', 'wm-child-maremma'); ?></span>
                         <img src="/wp-content/uploads/2023/11/Tracciato-95.png" alt="Arrow Icon" class="pm-arrow-icon">
                     </a>
                 </div>
-                <?php
-                    }
-                    if (array_key_exists('subscription', $mapping)) {
-                ?><?php
-                    }
-                    ?>
+            <?php endif; ?>
         </div>
+
 
     </div>
 
