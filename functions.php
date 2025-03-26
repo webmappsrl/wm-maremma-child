@@ -180,6 +180,62 @@ function mark_events_as_sent_in_feed()
   }
 }
 
+add_action('template_redirect', 'start_output_buffer');
+function start_output_buffer()
+{
+  if (!is_admin()) {
+    ob_start('add_alt_to_images_in_buffer');
+  }
+}
+
+function add_alt_to_images_in_buffer($html)
+{
+  return preg_replace_callback('/<img([^>]+)>/i', function ($matches) {
+    $img_tag = $matches[0];
+
+    // Se alt non è presente o è vuoto
+    if (!preg_match('/alt=["\'][^"\']+["\']/', $img_tag)) {
+
+      // Se alt="" presente ma vuoto, sostituiscilo
+      if (preg_match('/alt=["\']{0,1}["\']{0,1}/', $img_tag)) {
+        return preg_replace('/alt=["\']{0,1}["\']{0,1}/', 'alt="purely decorative image"', $img_tag);
+      }
+
+      // Altrimenti inserisci alt prima della chiusura
+      return str_replace('<img', '<img alt="purely decorative image"', $img_tag);
+    }
+
+    return $img_tag;
+  }, $html);
+}
+
+add_action('template_redirect', 'start_search_autocomplete_buffer');
+function start_search_autocomplete_buffer()
+{
+  if (!is_admin()) {
+    ob_start('add_autocomplete_to_search_input');
+  }
+}
+
+function add_autocomplete_to_search_input($html)
+{
+  return preg_replace_callback(
+    '/<input([^>]+type=["\']text["\'][^>]*name=["\']s["\'][^>]*)>/i',
+    function ($matches) {
+      $input_tag = $matches[0];
+
+      // Non modificare se autocomplete già presente
+      if (strpos($input_tag, 'autocomplete=') !== false) {
+        return $input_tag;
+      }
+
+      // Inserisci autocomplete="search" prima della chiusura
+      return str_replace('<input', '<input autocomplete="search"', $input_tag);
+    },
+    $html
+  );
+}
+
 /** 
  * Remove the immediate update from the feed
  */
