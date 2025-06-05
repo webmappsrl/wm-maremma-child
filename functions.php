@@ -209,6 +209,18 @@ function add_alt_to_images_in_buffer($html)
   }, $html);
 }
 
+function block_password_reset_for_guests()
+{
+  $blocked_actions = ['lostpassword', 'resetpass', 'rp'];
+  if (isset($_GET['action']) && in_array($_GET['action'], $blocked_actions)) {
+    wp_die('Il reset della password è disabilitato. Contatta un amministratore.');
+  }
+}
+add_action('login_init', 'block_password_reset_for_guests');
+
+// Disabilita la funzione globale di reset anche via wp-login
+add_filter('allow_password_reset', '__return_false');
+
 add_action('template_redirect', 'start_search_autocomplete_buffer');
 function start_search_autocomplete_buffer()
 {

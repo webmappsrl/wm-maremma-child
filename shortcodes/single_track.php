@@ -25,8 +25,8 @@ function wm_single_track_maremma($atts)
     // echo '<pre>';
     // print_r($track);
     // echo '</pre>';
-    $mapping_tickets = json_decode(file_get_contents(get_stylesheet_directory_uri() . '/assets/track_ticket_mapping.json'), TRUE);
-    // $mapping_tickets = json_decode(file_get_contents('http://parco-maremma.local/wp-content/themes/wm-maremma-child/assets/track_ticket_mapping.json'), TRUE);
+    // $mapping_tickets = json_decode(file_get_contents(get_stylesheet_directory_uri() . '/assets/track_ticket_mapping.json'), TRUE);
+    $mapping_tickets = json_decode(file_get_contents('http://parco-maremma.local/wp-content/themes/wm-maremma-child/assets/track_ticket_mapping.json'), TRUE);
     if (array_key_exists('excerpt', $track) && array_key_exists($language, $track['excerpt'])) {
         $excerpt = $track['excerpt'][$language];
     } else {
