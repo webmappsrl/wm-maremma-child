@@ -17,83 +17,83 @@
   },
   "ec_track_3_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/a1b-san-rabano-breve/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_3_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/a1b-san-rabano-breve/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online  or at the Alberese visitor centre.</p>"
   },
   "ec_track_10_it": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
-    "description": "<p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p><ul><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul>"
+    "description": "<p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p><ul><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul>"
   },
   "ec_track_10_en": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
-    "description": "<p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p><ul><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul>"
+    "description": "<p>The route can be purchased either online or at the Alberese visitor centre.</p><ul><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul>"
   },
   "ec_track_11_it": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
-    "description": "<p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p><ul><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul>"
+    "description": "<p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p><ul><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul>"
   },
   "ec_track_11_en": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
-    "description": "<p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p><ul><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul>"
+    "description": "<p>The route can be purchased either online or at the Alberese visitor centre.</p><ul><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul>"
   },
   "ec_track_22_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/a5-a6-faunistico-forestale/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_22_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/a5-a6-faunistico-forestale/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_20_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/a7-bicicletta-foce-ombrone/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00 (non include il noleggio della bicicletta)</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>Gratuito per i bambini fino a 6 anni e per i residenti nei Comuni della Comunità del Parco</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00 (non include il noleggio della bicicletta)</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>Gratuito per i bambini fino a 6 anni e per i residenti nei Comuni della Comunità del Parco</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_20_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/a7-bicicletta-foce-ombrone/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5,00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Free for residents in Grosseto, Magliano in Toscana, and in Orbetello, and for children until 6 years old</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5,00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Free for residents in Grosseto, Magliano in Toscana, and in Orbetello, and for children until 6 years old</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_12_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/a8-cammino-medievale/",
-    "description": "<p>Costo itinerario</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (dai 6 ai 14 anni)</li><li>Gruppi con 20 persone minimo (studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l’escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo itinerario</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (dai 6 ai 14 anni)</li><li>Gruppi con 20 persone minimo (studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_12_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/a8-cammino-medievale/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_19_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/a8-biciclietta-cammino-medievale/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_19_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/a8-biciclietta-cammino-medievale/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_18_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/c1-salto-del-cervo/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_18_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/c1-salto-del-cervo/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_9_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/c2-poggio-alle-sugherine/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_9_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/c2-poggio-alle-sugherine/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_8_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/t1-punta-del-corvo/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_8_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/t1-punta-del-corvo/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_7_it": {
     "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>L’itinerario è fruibile solo con guida e sarà effettuato con un minimo di 10 persone. Per prenotare rivolgersi al Centro Visite di Alberese ai numeri 0564 393238 / 0564 407098 dalle 9:00 alle 13:00 oppure scrivere a booking@parco-maremma.it</p>"
@@ -109,27 +109,27 @@
   },
   "ec_track_23_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/bicicletta-collelungo-pinastrellaia/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00 (la bicicletta non è fornita dal Parco della Maremma)</li><li>Ridotto: € 2,00 (bambini 6/14 anni - gruppi con almeno 20 persone* - studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00 (la bicicletta non è fornita dal Parco della Maremma)</li><li>Ridotto: € 2,00 (bambini 6/14 anni - gruppi con almeno 20 persone* - studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_23_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/bicicletta-collelungo-pinastrellaia/",
-    "description": "<p>Ticket Cost</p><ul><li>Maximum 150 participants. Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 years to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Maximum 150 participants. Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 years to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_24_it": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=63&nomeservizio= Percorso%20ciclabile%20combinato:%20San%20Rabano,%20Collelungo,%20Marina%20di%20Alberese%20",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00</li><li>Ridotto: € 5,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_24_en": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?fornitore=3&pagina=vendita&bundle=fornitore&servizio=63&nomeservizio= Percorso%20ciclabile%20combinato:%20San%20Rabano,%20Collelungo,%20Marina%20di%20Alberese%20",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10.00</li><li>Reduced: € 5.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_25_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/bicicletta-alberese-san-rabano/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00 (non include il noleggio della bicicletta)</li><li>Ridotto: € 5,00 (gruppi con almeno 20 persone*)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 10,00 (non include il noleggio della bicicletta)</li><li>Ridotto: € 5,00 (gruppi con almeno 20 persone*)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_25_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/bicicletta-alberese-san-rabano/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10,00 (rent bicycle not included)</li><li>Reduced: € 5,00 (children from 6 years to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 10,00 (rent bicycle not included)</li><li>Reduced: € 5,00 (children from 6 years to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_26_it": {
     "description": "<p>Intero: € 10,00 (la bicicletta non è fornita dal Parco della Maremma) - Ridotto: € 5,00 (gruppi con almeno 20 persone*)</p><p>L’itinerario è fruibile solo con guida. Per prenotare rivolgersi al Centro Visite di Alberese ai numeri 0564 393238 / 0564 407098 dalle 8:30 alle 13:30 oppure scrivere a booking@parco-maremma.it</p><p><strong>Da sabato 11 giugno è in vigore la disciplina estiva di visita, per cui il percorso è effettuabile solo con guida e su prenotazione. Consulta il <a href='https://parco-maremma.it/disciplina-estiva-2022-al-via-sabato-11-giugno' target='_blank'>calendario di visita</a></strong></p><ul><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul>"
@@ -145,27 +145,27 @@
   },
   "ec_track_28_it": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
-    "description": "<p>Intero: € 5,00 - Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, studenti ma gruppi con 20 paganti minimo*)</p><p>Itinerario gratuito per i residenti della Comunità del Parco</p><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p><p><strong>Itinerario Chiuso</strong></p><ul><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul>"
+    "description": "<p>Intero: € 5,00 - Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, studenti ma gruppi con 20 paganti minimo*)</p><p>Itinerario gratuito per i residenti della Comunità del Parco</p><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p><p><strong>Itinerario Chiuso</strong></p><ul><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul>"
   },
   "ec_track_28_en": {
     "purchase": "https://b2c.ticket-cloud.it/router.php?pagina=acquista&bundle=fornitore&fornitore=3",
-    "description": "<p>Adults: € 5,00 - Reduced: € 2,00 (children from 6 to 14 years, studenti ma gruppi con 20 paganti minimo*)</p><p>Free itinerary for residents of the Park Community</p><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p><p><strong>Closed Itinerary</strong></p><ul><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul>"
+    "description": "<p>Adults: € 5,00 - Reduced: € 2,00 (children from 6 to 14 years, studenti ma gruppi con 20 paganti minimo*)</p><p>Free itinerary for residents of the Park Community</p><p>The route can be purchased either online or at the Alberese visitor centre.</p><p><strong>Closed Itinerary</strong></p><ul><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul>"
   },
   "ec_track_80697_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/a11-bicicletta-strada-degli-olivi/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00 (non include il noleggio della bicicletta)</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>Gratuito per i bambini fino a 6 anni</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00 (non include il noleggio della bicicletta)</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>Gratuito per i bambini fino a 6 anni</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_80697_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/a11-bicicletta-strada-degli-olivi/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5,00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Free for children until 6 years old</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5,00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Free for children until 6 years old</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_80699_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/a5-a6-faunistico-forestale/",
-    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online (minimo 24 ore prima della data prevista per l'escursione) sia al centro visite di Alberese.</p>"
+    "description": "<p>Costo biglietto</p><ul><li>Intero: € 5,00</li><li>Ridotto: € 2,00 (ragazzi dai 6 ai 14 anni, gruppi con 20 paganti minimo*, studenti max 25 anni)</li><li>La prenotazione ed il servizio guida sono obbligatori per i gruppi da 20 persone in poi</li></ul><p>Il percorso è acquistabile sia online sia al centro visite di Alberese.</p>"
   },
   "ec_track_80699_en": {
     "purchase": "https://www.parcomaremma.eu/servizio/a5-a6-faunistico-forestale/",
-    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online (at least 24 hours before the planned excursion) or at the Alberese visitor centre.</p>"
+    "description": "<p>Ticket Cost</p><ul><li>Adults: € 5.00</li><li>Reduced: € 2.00 (children from 6 to 14 years, groups min. 20 people*, students up to 25 years of age)</li><li>Reservation and guide service are mandatory for groups of 20 or more</li></ul><p>The route can be purchased either online or at the Alberese visitor centre.</p>"
   },
   "ec_track_14_it": {
     "purchase": "https://www.parcomaremma.eu/servizio/a7-bicicletta-foce-ombrone/",
